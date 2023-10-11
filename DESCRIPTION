@@ -1,0 +1,23 @@
+Package: mysterycoffee
+Type: Package
+Title: Simulate Random Encounters
+Version: 0.1.0
+Author: Barbara Vreede
+Maintainer: Barbara Vreede <b.vreede@esciencecenter.nl>
+Description: Group people in pairs to simulate the random
+    encounters we have at the coffee machine.
+License: Apache License (>= 2)
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 2.10)
+Config/testthat/edition: 3
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+Imports: 
+    dplyr (>= 1.1.2),
+    starwarsdb (>= 0.1.2)
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr

@@ -1,0 +1,46 @@
+---
+title: "How to use Mysterycoffee?"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{example}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## The idea behind Mysterycoffee
+
+With working from home, some of the serendipity was taken out of the work day: how about those chance meetings at the water cooler or the coffee machine?
+
+Mysterycoffee was created to fill this void: by randomly pairing colleagues and inviting them for a shared coffee break, those magical moments can happen again!
+
+First, load the package:
+```{r setup}
+library(mysterycoffee)
+```
+
+Then, create a list of your colleagues, as a vector:
+
+```{r}
+colleagues <- c("Anna", "Bart", "Christine", "Don", "Elise", "Frank")
+```
+
+Pair the colleagues, using `make_groups`:
+```{r usage example}
+make_groups(colleagues)
+
+```
+
+You can even assign a time slot, as follows:
+
+```{r usage with time}
+# make_groups_by_time(colleagues)
+```
+
+That's it! 
